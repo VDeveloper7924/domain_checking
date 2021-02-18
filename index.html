@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var sc_project=12403279; 
+        var sc_invisible=1; 
+        var sc_security="34660542"; 
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+        <div class="statcounter">
+            <a title="web statistics" href="https://statcounter.com/" target="_blank">
+                <img class="statcounter" src="https://c.statcounter.com/12403279/0/34660542/1/" alt="web statistics">
+            </a>
+        </div>
+    </noscript>
+    <div class="text-center">
+        <h1>my-website.com</h1>
+        <p>Search for phishing domains registered within the last 24 hours.</p> 
+        <p>website powered by acme.</p> 
+    </div>
+    <div class="container main-body">
+        <div class="row py-5">
+            <div class="form-group col-xl-9 col-md-12 d-flex justify-content-center m-auto">
+                <input type="text" class="form-control keyword-input" id="uname" placeholder="keyword (e.g. google)" value="" name="keyword" required>
+            </div>
+            <div class="col-xl-4 col-md-6 d-flex justify-content-center py-4 m-auto">
+                <button type="button" class="btn btn-light btn-outline-secondary search-button w-75">Search</button>
+            </div>
+            <div class="col-xl-12 error d-flex justify-content-center m-auto text-danger">
+                <p>&nbsp;</p>
+                <div class="spinner-border text-primary display-spinner"></div>
+            </div>
+        </div>
+        <div class="row display-count loading-hidden">
+            <div class="col">
+                <p>total domains: <span>0</span></p>
+            </div>
+        </div>
+        <div class="row display-table text-center loading-hidden">
+            <div class="col">
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Domain</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row display-runtime loading-hidden">
+            <div class="col">
+                <p>total runtime: <span>0</span>&nbsp;s</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <p>Copyright my-website 2020</p>
+        <p>Total domains registration in the last 24 hours: <span class="change-domain"></span></p>
+    </div>
+
+</body>
+<script src="./js/index.js"></script>
+</html>

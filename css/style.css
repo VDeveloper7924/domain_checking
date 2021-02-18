@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+table tr>*:nth-child(1) {
+    width: 60%;
+}
+table tr>*:nth-child(2) {
+    width: 40%;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+.main-body {
+    flex-grow: 1;
+}
+tbody div>span {
+    cursor: pointer;
+    padding: 0 10%;
+    text-decoration: underline;
+    color: #4f4fce;
+}
+div.loading-hidden,
+.display-spinner {
+    display: none;
+}
+div.loading-hidden.display {
+    display: block;
+}
+.display-spinner.display {
+    display: block;
+}
